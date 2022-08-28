@@ -51,7 +51,7 @@ WriteLine();
 int [,]array2= EvenIndexOnSquare(array1);
 PrintMatrixArray(array2);
 
-
+// Метод заполнения двухмерного массива случайными числами
 int [,] GetTabl (int rows, int columns, int minVaiue, int maxValue)
 {
     int [,] resuit = new int [rows, columns];
@@ -64,7 +64,7 @@ int [,] GetTabl (int rows, int columns, int minVaiue, int maxValue)
     }
     return resuit;
 }
-
+// Метод печати двухмерного массива
 void PrintMatrixArray(int [,] inArray)
 {
     for (int i = 0; i<inArray.GetLength(0); i++)
@@ -76,7 +76,7 @@ void PrintMatrixArray(int [,] inArray)
         WriteLine();
     }
 }
-
+// Замена элементов с двуья чётными индексами на квадраты найденных элементов
 int [,] EvenIndexOnSquare(int [,] matr)
 {
     int[,] array = matr;
